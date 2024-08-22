@@ -14,19 +14,29 @@
     <!-- tailwindcss and daisyui cs=dn link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <style>
         .font-manrop {
-            font-family: "Manrope", sans-serif;
-
+            font-family: "Manrope",
         }
+
+        .navbar-end {
+            display: none;
+        }
+
+        .navbar-center {
+            display: none;
+        }
+       
+
+        
     </style>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        // clifford: '#da373d',
+                        clifford: '#da373d',
                         "common-color": ' #ABEF5F',
                     }
                 }
@@ -37,14 +47,19 @@
 
 <body class="font-manrop">
     <!-- Header section -->
-    <header class="container">
+    <header class="mb-24">
         <!-- Nav Section -->
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
+        <nav class="">
+            <div class="navbar  bg-gray-100 flex justify-between ">
+                <div class="flex text-center items-center  ">
+                    <i class="fa fa-long-arrow-right bg-common-color rounded-full text-center items-center py-2 px-2 -rotate-45 "
+                        aria-hidden="true"></i>
+                    <a class="btn btn-ghost text-2xl font-bold">Rinterio</a>
 
-                    <div class="dropdown ">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                </div>
+                <div>
+                    <div class="dropdown  ">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden  ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -52,7 +67,7 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow -ml-44">
                             <li class="text-black font-bold"><a>Home</a></li>
                             <li><a>Services</a></li>
                             <li><a>Portfolio</a></li>
@@ -60,17 +75,9 @@
                             <li><a>Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="flex text-center items-center  ">
-                        <i class="fa fa-long-arrow-right bg-common-color rounded-full text-center items-center py-2 px-2 -rotate-45 "
-                            aria-hidden="true"></i>
-                        <a class="btn btn-ghost text-2xl font-bold">Rinterio</a>
-
-                    </div>
-
                 </div>
 
-
-                <div class="navbar-center hidden lg:flex">
+                <div class="navbar-center lg:ml-48  lg:flex ">
                     <ul class="menu menu-horizontal px-1">
                         <li><a class="text-black font-bold">Home</a></li>
                         <li><a>Services</a></li>
@@ -80,20 +87,34 @@
                     </ul>
                 </div>
 
-              
-                <!-- <div class="navbar-end">
-                    <a class="btn">Button</a>
-                </div> -->
+                <div class="navbar-end space-x-2  lg:flex mx-w-[200px] ">
+                    <i class="fa fa-search bg-white rounded-full  py-2 px-2  " aria-hidden="true"></i>
+                    <i class="fa fa-shopping-cart bg-white py-2 px-2 rounded-full" aria-hidden="true"></i>
+                    <h2 class="bg-common-color px-2 py-2 font-bold rounded-full text-xs">Book Consult <i
+                            class="fa fa-long-arrow-right bg-black text-white rounded-full text-center items-center py-1 px-1 -rotate-45 "
+                            aria-hidden="true"></i></h2>
+                </div>
             </div>
         </nav>
         <!-- banner section -->
         <div>
-
+            <!-- banner img -->
+             <div class="max-w-[400px] lg:max-w-[600px] mx-auto">
+                <img src="./imge/banner.png" alt="">
+             </div>
+             <!-- banner text content -->
+              <div class="max-w-[400px] lg:max-w-[740px] mx-auto">
+                <h1 class="font-extrabold text-[23px] text-center lg:text-[45px]">A barn house of this deasing has a striking appearance </h1>
+                <p class="text-gray-500 text-center my-2 text-[10px] lg:max-w-[500px] mx-auto">Browes our collection of barn house plans and barndominiums to find your dream home. view the top trending plans in this collection. View all trending house</p>
+               
+              </div>
+              <h2 class="bg-common-color w-[150px] h-[40px] text-center flex items-center justify-center  font-bold rounded-full text-xs mx-auto my-5">View Details <i
+                class="fa fa-long-arrow-right bg-green-700 text-white rounded-full  items-center ml-1 py-1 px-1 -rotate-45 "
+                aria-hidden="true"></i></h2>
         </div>
     </header>
     <!-- Main Section -->
     <main>
-
     </main>
     <!-- Footer Section -->
     <footer>
