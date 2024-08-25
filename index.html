@@ -28,6 +28,13 @@
         .navbar-center {
             display: none;
         }
+
+        .connect-section {
+            background-image: url(./imge/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
     </style>
     <script>
         tailwind.config = {
@@ -37,6 +44,7 @@
                         clifford: '#da373d',
                         "common-color": ' #ABEF5F',
                     }
+
                 }
             }
         }
@@ -245,7 +253,7 @@
             </div>
         </section>
         <!-- Latest Work Section -->
-        <section class="mb-24 ">
+        <section class="mb-24">
             <div class="space-y-6">
                 <!-- Latest text section -->
                 <div class="pt-6 space-y-3">
@@ -294,8 +302,7 @@
                     </div>
                 </div>
                 <!-- card 2 row -->
-                <div
-                    class=" space-y-2 lg:space-y-0 lg:flex lg:max-w-[900px] lg:max-h-[170px] m-auto  lg:gap-1 ">
+                <div class=" space-y-2 lg:space-y-0 lg:flex lg:max-w-[900px] lg:max-h-[170px] m-auto  lg:gap-1 ">
 
                     <!-- card 1 -->
                     <div
@@ -337,28 +344,82 @@
 
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
+        </section>
+        <!-- Connect Section -->
+        <section class="connect-section pb-10">
+            <div class="space-y-5">
+                <!-- connect secton text -->
+                <div class="pt-6 space-y-3">
+                    <h3
+                        class="w-[120px] h-[30px] bg-[#ABEF5F] flex justify-center items-center rounded-full text-xs font-bold m-auto ">
+                        <i class="fa fa-long-arrow-right text-[15px] pr-2" aria-hidden="true"></i>Let's Connect
+                    </h3>
+                    <h1 class="text-[30px] font-extrabold  text-center  lg:text-[47px] m-auto">Let's Discuss Next
+                        Project</h1>
+                    <p class="text-gray-500 max-w-[300px] m-auto text-center text-[13px]  ">The barn house captivates
+                        with its blend of rustic charm and modern sophistication, featuring weather wood, sleek metal
+                        accents</p>
+                </div>
+                <!-- form -->
+                <div class="m-auto max-w-[400px] lg:max-w-[900px] space-y-4  ">
 
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 ">
+                        <div>
+                            <input type="text" placeholder="First Name*" class="input  w-full rounded-[25px] " />
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Last Name*" class="input  w-full rounded-[25px] " />
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Phone Number*" class="input  w-full rounded-[25px] " />
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Email Number*" class="input  w-full rounded-[25px] " />
+                        </div>
+                    </div>
+                    <div class="space-y-5">
+                        <div class="m-auto">
+                            <textarea class="textarea w-full h-[150px] " placeholder="Write your message here " cols=""
+                                rows=""></textarea>
+                        </div>
+                       <button class="btn btn-block rounded-[25px] bg-[#ABEF5F] font-extrabold text-[18px]">Send Mail
+                            <i class="fa fa-long-arrow-right text-[15px] py-1 px-1 bg-[black] text-white rounded-full -rotate-45 "
+                                aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <!-- Footer Section -->
-    <footer>
-
+    <footer class="bg-black mb-24 py-20 ">
+        <div class="space-y-5 max-w-[400px] lg:max-w-[600px] m-auto">
+            <!-- text -->
+            <div class="max-w-[300px] lg:max-w-[600px] m-auto ">
+                <h3 class=" text-[30px] font-bold m-auto text-white  flex items-center justify-center">
+                    <i class="fa fa-long-arrow-right bg-[#ABEF5F] py-1 px-1 rounded-full text-[15px]  -rotate-45 text-black mr-3"
+                        aria-hidden="true"></i>Rinterio
+                </h3>
+                <p class="text-gray-500 max-w-[300px] m-auto text-center text-[13px]  ">The barn house captivates
+                    with its blend of rustic charm and modern sophistication, featuring weather wood, sleek metal
+                    accents</p>
+            </div>
+            <!-- link -->
+            <div class="max-w-[300px] m-auto lg:max-w-[600px] ">
+                <ul class=" flex flex-col justify-center text-center space-y-4 lg:space-y-0 lg:space-x-10 lg:flex-row">
+                    <li><a class="text-gray-300 font-bold" href="">Home</a></li>
+                    <li><a class="text-gray-300 font-bold" href="">Services</a></li>
+                    <li><a class="text-gray-300 font-bold" href="">Portfolio</a></li>
+                    <li><a class="text-gray-300 font-bold" href="">Blogs</a></li>
+                    <li><a class="text-gray-300 font-bold" href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="lg:max-w-[200px] m-auto">
+                <button class="btn btn-block  rounded-[25px] bg-[#ABEF5F] font-extrabold text-[18px]">Book Consult<i class="fa fa-long-arrow-right bg-black py-1 px-1 rounded-full text-[15px]  -rotate-45 text-white mr-3"
+                    aria-hidden="true"></i></button>
+                     </div>
+        </div>
     </footer>
 </body>
 
